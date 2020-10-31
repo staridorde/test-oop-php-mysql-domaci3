@@ -133,6 +133,7 @@
     //pozivamo funkciju da se izvrši
     skloniBlokove();
 
+    //staridorde
     //prikaziBlok funkcija koristeći switch prolazi kroz sve tipove zahteva koji mogu biti odabrani
     //$("input[name=http_zahtev]:checked")[0].id je jQuery funkcija koja nam omogućava da 
     // dođemo do svih čekiranih input polja čiji je name http_zahtev 

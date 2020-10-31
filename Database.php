@@ -69,7 +69,6 @@ class Database
             $q.='('.$rows.')';
         }
         $q.=" VALUES($query_values)";
-        // echo($q);
         if($this->ExecuteQuery($q)){
             return true;
         }else{
@@ -84,7 +83,6 @@ class Database
         }
         $query_values = implode(",", $set_query);
         $q = "UPDATE $table SET $query_values WHERE id=$id";
-        echo $q;
         if($this->ExecuteQuery($q) && $this->affected>0){
             return true;
         }else{
